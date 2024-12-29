@@ -1,3 +1,7 @@
+###NAME:Venkata Revanth B
+
+###Register number: 24001476
+
 # Monitoring-distance-value-in-Thing-speak-cloud-using-ultrasonic-sensor-and-ESP32-controller
 
 # Uploading ultrasonic sensor data in Thing Speak cloud
@@ -96,11 +100,12 @@ Prototype and build IoT systems without setting up servers or developing web sof
 
  
 # PROGRAM:
-```#include "ThingSpeak.h"
+```
+#include "ThingSpeak.h"
 #include <WiFi.h>
 
-char ssid[] = "*"; //SSID
-char pass[] = "*"; // Password
+char ssid[] = "iPhone";
+char pass[] = "1234567890"; 
 
 
 const int trigger = 25;
@@ -109,9 +114,9 @@ long T;
 float distanceCM;
 WiFiClient  client;
 
-unsigned long myChannelField = ***; // Channel ID
-const int ChannelField = 1; // Which channel to write data
-const char * myWriteAPIKey = "*"; // Your write API Key
+unsigned long myChannelField = 2785422; 
+const int ChannelField = 1;
+const char * myWriteAPIKey = "6LF1FAPNWG4EJNUS"; 
 
 void setup()
 {
@@ -151,9 +156,13 @@ void loop()
 ```
 # CIRCUIT DIAGRAM:
 
+<img src="https://github.com/user-attachments/assets/f90ae576-a839-48e9-be44-a3f98195b0bb" width="600">
+
 # OUTPUT:
-![3](https://github.com/user-attachments/assets/51dc82cd-1c55-4b65-b571-82845f466730)
-![3-1](https://github.com/user-attachments/assets/82a3f34f-2f6c-46c8-ae2d-77b7b33931ef)
+
+<img src="https://github.com/user-attachments/assets/16cbf01a-a10b-42a7-bf22-dfc3090cdb15" width="600">
+
+<img src="https://github.com/user-attachments/assets/f5f23f64-2b89-4142-8574-e07d772b9842" width="600">
 
 # RESULT:
 Thus the distance values are updated in the Thing speak cloud using ESP32 controller.
